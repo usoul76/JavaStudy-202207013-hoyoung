@@ -18,7 +18,7 @@ public class String1 {
 		
 		//해당 문자열을 찾아서 다른 문자열로 바꿔주는 기능
 		String replaceAddress = address.replace(' ', '-');
-		System.out.println(replaceAddress);;
+		System.out.println(replaceAddress);
 		
 		replaceAddress = address.replaceAll(" ", "-");
 		System.out.println(replaceAddress);
