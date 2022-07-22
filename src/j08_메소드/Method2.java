@@ -85,6 +85,4 @@ public class Method2 {
 		test6(names);
 		System.out.println("test6메소드 호출 후 출력");
 	}
-
 }
-
