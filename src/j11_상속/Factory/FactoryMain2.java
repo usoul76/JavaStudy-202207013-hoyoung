@@ -1,7 +1,7 @@
 package j11_상속.Factory;
 
 public class FactoryMain2 {
-
+	
 	public static void main(String[] args) {
 		//업캐스팅
 		Factory factory1 = new SamsungFactory(1);
@@ -13,17 +13,17 @@ public class FactoryMain2 {
 		factories[2] = new SamsungFactory(2);
 		factories[3] = new LGFactory(2);
 		
-		System.out.println("모든 공장을 가동합니다");
+		System.out.println("모든 공장을 가동합니다.");
 		for(int i = 0; i < factories.length; i++) {
 			factories[i].start();
 		}
 		
 		System.out.println();
 		
-		System.out.println("모든 공장을 중지합니다");
+		System.out.println("모든 공장을 중지합니다.");
 		for(int i = 0; i < factories.length; i++) {
 			factories[i].stop();
 		}
-	
+		
 	}
 }

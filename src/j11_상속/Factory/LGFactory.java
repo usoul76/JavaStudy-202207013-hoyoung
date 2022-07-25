@@ -1,24 +1,25 @@
 package j11_상속.Factory;
 
-public class LGFactory extends Factory{
-	
+public class LGFactory extends Factory {
+
 	public LGFactory(int factoryNumber) {
-			super(factoryNumber);
+		super(factoryNumber);
 	}
 	
 	@Override
 	public void start() {
-		System.out.println("LG ");
+		System.out.print("LG ");
 		super.start();
 	}
 	
 	@Override
 	public void stop() {
-		System.out.println("LG ");
+		System.out.print("LG ");
 		super.stop();
 	}
 	
 	public void produceSmartTv() {
-		System.out.println("LG 스마트 TV를 생산합니다");
+		System.out.println("LG 스마트 TV를 생산합니다.");
 	}
+
 }
