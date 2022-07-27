@@ -1,5 +1,5 @@
 package j08_메소드;
-
+//....
 public class Method1 {
 	
 	public static void printData(String data) {

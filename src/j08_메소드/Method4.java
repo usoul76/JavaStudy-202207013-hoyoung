@@ -1,5 +1,5 @@
 package j08_메소드;
-
+//........
 public class Method4 {
 	
 	public static int add(int a, int b) {
