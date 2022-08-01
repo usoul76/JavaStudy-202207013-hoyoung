@@ -17,7 +17,7 @@ public class ClassTestMain2 {
 		arrayA[0].printInfo();
 		arrayA[1].printInfo();
 		
-		for(int i = 0; i < arrayA.length; i++ ) {
+		for(int i = 0; i < arrayA.length; i++) {
 			arrayA[i].printInfo();
 			// B.printInfo();
 			// C.printInfo();
