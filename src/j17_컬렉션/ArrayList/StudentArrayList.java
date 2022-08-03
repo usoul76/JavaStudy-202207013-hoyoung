@@ -10,7 +10,7 @@ public class StudentArrayList {
 	public static void main(String[] args) {
 		Student student1 = new Student("조문기");
 		Student student2 = new Student("김호영");
-		Student student3 = new Student("서제효");
+		Student student3 = new Student("서재효");
 		Student student4 = new Student("신승한");
 		Student student5 = new Student("전나경");
 		
@@ -23,6 +23,14 @@ public class StudentArrayList {
 		ArrayList<Student> studentList = new ArrayList<Student>();
 		Student[] students = {student1, student2, student3, student4, student5};
 		studentList.addAll(Arrays.asList(students));
+//		for(int i = 0; i < students.length; i++) {
+//			studentList.add(students[i]);
+//		}
+//		studentList.add(student1);
+//		studentList.add(student2);
+//		studentList.add(student3);
+//		studentList.add(student4);
+//		studentList.add(student5);
 		
 		System.out.println(studentList);
 		
@@ -36,7 +44,7 @@ public class StudentArrayList {
 		 */
 		
 		for(int i = 0; i < studentList.size(); i++) {
-			if(studentList.get(i).getName().equals("서재효")){
+			if(studentList.get(i).getName().equals("서재효")) {
 				System.out.println(studentList.get(i));
 				studentList.remove(i);
 			}
@@ -51,8 +59,11 @@ public class StudentArrayList {
 		}
 		
 		System.out.println(studentList);
- 
-	}
+		
+		
+		
+		
 
+	}
 
 }
