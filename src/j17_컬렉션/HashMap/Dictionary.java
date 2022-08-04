@@ -4,11 +4,25 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import j17_컬렉션.ArrayList.User;
+
 public class Dictionary {
 
 	public static void main(String[] args) {
 
 		Map<String, String> dict = new HashMap<String, String>();
+		dict.put("축구", "축구 -> soccer");
+		dict.put("야구", "야구 -> baseball");
+		dict.put("농구", "농구 -> basketball");
+		dict.put("골프", "골프 -> golf");
+		
+		Map<String, User> userDict = new HashMap<String, User>();
+		String username = "junil";
+		userDict.put(username, User.builder().username(username).password("1234").build());
+		
+		if(userDict.containsKey("junil")) {
+			System.out.println(userDict.get("junil"));
+		}
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -24,17 +38,8 @@ public class Dictionary {
 			if(searchText.equals("exit")) {
 				System.out.println("프로그램 종료");
 				break;
-			}else if(searchText.equals("축구")) {
-				System.out.println("축구 -> soccer");
-				
-			}else if(searchText.equals("야구")) {
-				System.out.println("야구 -> baseball");
-				
-			}else if(searchText.equals("농구")) {
-				System.out.println("농구 -> basketball");
-				
-			}else if(searchText.equals("골프")){
-				System.out.println("골프 -> golf");
+			}else if(dict.containsKey(searchText)) {
+				System.out.println(searchText);
 				
 			}else {
 				System.out.println("여기에 없는 단어입니다");
