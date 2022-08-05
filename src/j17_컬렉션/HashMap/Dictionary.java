@@ -9,7 +9,7 @@ import j17_컬렉션.ArrayList.User;
 public class Dictionary {
 
 	public static void main(String[] args) {
-
+		
 		Map<String, String> dict = new HashMap<String, String>();
 		dict.put("축구", "축구 -> soccer");
 		dict.put("야구", "야구 -> baseball");
@@ -19,10 +19,11 @@ public class Dictionary {
 		Map<String, User> userDict = new HashMap<String, User>();
 		String username = "junil";
 		userDict.put(username, User.builder().username(username).password("1234").build());
-		
+
 		if(userDict.containsKey("junil")) {
 			System.out.println(userDict.get("junil"));
 		}
+		
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -30,22 +31,21 @@ public class Dictionary {
 		
 		while(true) {
 			System.out.println("[사전 검색 기능]");
-			System.out.println("# 프로그램 종료 명령(exit)");
-		
-			System.out.println("검색어: ");
+			System.out.println("# 프로그램 종료명령(exit)");
+			
+			System.out.print("검색어: ");
 			searchText = scanner.nextLine();
 			
 			if(searchText.equals("exit")) {
 				System.out.println("프로그램 종료");
 				break;
 			}else if(dict.containsKey(searchText)) {
-				System.out.println(searchText);
+				System.out.println(dict.get(searchText));
 				
 			}else {
-				System.out.println("여기에 없는 단어입니다");
+				System.out.println("지원하지 않는 단어입니다.");
 			}
 			System.out.println();
-		
 		}
 		
 		/*
@@ -53,8 +53,11 @@ public class Dictionary {
 		 * 야구 -> baseball
 		 * 농구 -> basketball
 		 * 골프 -> golf
+		 * 
+		 * 
 		 */
-
+		
 	}
 
 }
+
