@@ -23,13 +23,15 @@ public class CollectionForEach {
 		
 		Consumer<String> consumer = str -> {
 			System.out.println(str);
-			};
+		};
 		
 		strList.forEach(consumer);
 		
+		System.out.println("=================================");
+		
 		Set<String> strSet = new HashSet<String>();
 		
-		for(int i = 0; i <26; i++) {
+		for(int i = 0; i < 26; i++) {
 			strSet.add(Character.toString((char) (97 + i)));
 		}
 		
@@ -43,15 +45,16 @@ public class CollectionForEach {
 		
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		
-		for(int i = 0; i <26; i++) {
+		for(int i = 0; i < 26; i++) {
 			map.put(Character.toString((char) (97 + i)), 97 + i);
 		}
 		
 		map.forEach((k, v) -> {
-			System.out.println("key: " + k);
-			System.out.println(", ");
+			System.out.print("key: " + k);
+			System.out.print(", ");
 			System.out.println("value: " + v);
 		});
+		
 
 	}
 
