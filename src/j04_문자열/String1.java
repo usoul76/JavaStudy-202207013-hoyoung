@@ -1,5 +1,11 @@
 package j04_문자열;
-
+// split: 구분자를 지정해서 문자열을 잘라 배열로 반환
+// indexOf: 해당 문자열이 어느 위치에서 시작되는지 인덱스값 반환
+// substring: startindex부터 endindex 전까지 문자열을 잘라 문자열로 반환
+// replaceAll: 해당 문자열을 찾아 다른 문자열로 변환
+//toLowerCase,toUpperCase: 전부 소문자 or 전부 대문자로 변환
+//trim: 문자열의 양쪽 끝 공백을 제거해준다.
+//contains: 문자열에 해당 문자열이 포함되어 있는지 true,false 반환
 public class String1 {
 
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 package j04_문자열;
-
+//StringBuiler : 문자열 생성
 public class StringBuilder1 {
 
 	public static void main(String[] args) {
