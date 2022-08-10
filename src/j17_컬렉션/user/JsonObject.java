@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JSONObject {
+public class JsonObject {
 
 	public static void main(String[] args) {
 		
